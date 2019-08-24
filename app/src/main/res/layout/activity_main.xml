@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:fitsSystemWindows="true"
+    tools:context="javed.com.learningdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btnclickme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Click me" />
+
+    <!-- Latitude -->
+    <TextView
+        android:id="@+id/labelLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnclickme"
+        android:layout_marginRight="10dp"
+        android:text="latitude" />
+
+    <TextView
+        android:id="@+id/fieldLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnclickme"
+        android:layout_toRightOf="@+id/labelLatitude" />
+
+    <!-- Latitude -->
+
+    <!-- Longititude -->
+    <TextView
+        android:id="@+id/labelLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLatitude"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="longitude" />
+
+    <TextView
+        android:id="@+id/fieldLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLatitude"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelLongitude" />
+
+    <!-- Longititude -->
+    <LinearLayout
+        android:layout_below="@id/fieldLongitude"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/mywebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

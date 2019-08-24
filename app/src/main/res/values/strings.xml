@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LearningDemo</string>
+    <string name="GPSAlertDialogTitle">Title</string>
+    <string name="GPSAlertDialogMessage">Message</string>
+    <string name="action_settings">action setting</string>
+    <string name="cancel">cancel</string>
+</resources>
